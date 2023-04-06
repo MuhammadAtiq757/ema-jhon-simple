@@ -19,11 +19,13 @@ const Shop = () => {
 
     useEffect(()=>{
 const storedCart = getShoppingCart();
+
 const savedCart = [];
 // step 1 : get id
 for (const id in storedCart){
     // step 2: get the product by using id
     const addedProduct = products.find(product => product.id === id)
+    console.log(storedCart);
 
 if(addedProduct){
 // step 3: get quantity of the product
@@ -43,6 +45,7 @@ setCart(savedCart)
 
     const handleAddToCart = (product) => {
     let newCart = []
+    
 
         // const newCart = [...cart, product];
      // if product doesn't exist in the cart, then set quantity = 1;
