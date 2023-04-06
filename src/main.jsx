@@ -12,6 +12,7 @@ import Oders from './components/oders/Oders';
 import Inventory from './components/inventory/Inventory';
 import Login from './components/login/Login';
 import cartProductsLoader from './loaders/cartPRoductsLoader';
+import Checkout from './components/cheakout/Checkout';
 
 const router = createBrowserRouter([
   {
@@ -34,7 +35,13 @@ const router = createBrowserRouter([
 {
   path: 'login',
   element:<Login></Login>
+},
+
+{
+  path:'/checkout',
+  element:<Checkout></Checkout>
 }
+
 
     ]
   
